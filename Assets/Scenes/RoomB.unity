@@ -333,10 +333,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Safe
-  Description: This is a pretty safe safe, it's locked up tight.
+  Description: This is a pretty safe safe, it's locked up tight. (Safe added to Evidence
+    Folder)
   TextBox: {fileID: 997516321}
   UIText: {fileID: 122155436}
   Player: {fileID: 554544691}
+  CollectedEvidence: {fileID: 1636848187}
 --- !u!58 &981761619
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -509,6 +511,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbd44f9da6efbf7409b15e3dbecef7c0, type: 3}
+--- !u!1 &1636848187 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8269982876099814697, guid: 85d0e402aa3c87649aa443514dc4a0f2, type: 3}
+  m_PrefabInstance: {fileID: 2909823927314830275}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2165637919833891667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -869,6 +876,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 312322653318313878, guid: 85d0e402aa3c87649aa443514dc4a0f2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2909823926309906538, guid: 85d0e402aa3c87649aa443514dc4a0f2, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -961,6 +972,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 700484802}
+    - target: {fileID: 2909823926903027682, guid: 85d0e402aa3c87649aa443514dc4a0f2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85d0e402aa3c87649aa443514dc4a0f2, type: 3}
 --- !u!1001 &4332275068270455439

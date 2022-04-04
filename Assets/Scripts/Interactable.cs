@@ -36,6 +36,10 @@ public class Interactable : MonoBehaviour
     public virtual void OnTriggerEnter2D(Collider2D collision)
     {
         TextBox.SetActive(true);
+        if(Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.F) && Input.GetKey(KeyCode.E))
+        {
+            Debug.Log("Safe appears!");
+        }
     }
 
     public virtual void OnTriggerExit2D(Collider2D collision)

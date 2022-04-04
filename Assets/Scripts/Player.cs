@@ -12,6 +12,9 @@ public class Player : MonoBehaviour
 
     //This next public pool will be used in the Interactable Script.
     [SerializeField] public bool FreezeMovement;
+
+
+    [SerializeField] public GameObject[] Evidence;
     
     void Update()
     {
@@ -69,5 +72,11 @@ public class Player : MonoBehaviour
         {
             sprRend.flipX = true;
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        collision.CompareTag(tag);
+        { }
     }
 }
