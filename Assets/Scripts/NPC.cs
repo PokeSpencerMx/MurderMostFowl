@@ -7,6 +7,8 @@ public class NPC : Interactable
 {
     public string DialogueOne;
     public string[] Dialogue;
+
+    public GameObject EvidenceFolder;
     
     public override void Start()
     {
@@ -14,9 +16,17 @@ public class NPC : Interactable
         InteractedWith.text = Dialogue[0];
     }
 
-    public void PresentedTheRightEvidence()
+    
+
+    public override void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(Dialogue[1]);
-        UIText.GetComponent<Text>().text = Dialogue[1];
+        base.OnTriggerEnter2D(collision);
+        EvidenceFolder.SetActive(true);
+    }
+
+    public override void OnTriggerExit2D(Collider2D collision)
+    {
+        base.OnTriggerExit2D(collision);
+        EvidenceFolder.SetActive(false);
     }
 }

@@ -12,6 +12,7 @@ public class Interactable : MonoBehaviour
     public GameObject Player;
     
     
+    
     // Start is called before the first frame update
     public virtual void Start()
     {
