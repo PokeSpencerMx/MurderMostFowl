@@ -5,18 +5,18 @@ using UnityEngine.UI;
 
 public class Henrietta : NPC
 {
-    private bool TalkingToHenrietta = false;
+    //private bool TalkingToHenrietta = false;
 
     public override void OnTriggerEnter2D(Collider2D collision)
     {
         base.OnTriggerEnter2D(collision);
-        TalkingToHenrietta = true;
+        //TalkingToHenrietta = true;
     }
 
     public override void OnTriggerExit2D(Collider2D collision)
     {
         base.OnTriggerExit2D(collision);
-        TalkingToHenrietta = false;
+        //TalkingToHenrietta = false;
     }
 
     public virtual void PresentedTheRightEvidence()

@@ -8,7 +8,7 @@ public class NPC : Interactable
     public string DialogueOne;
     public string[] Dialogue;
 
-    public GameObject EvidenceFolder;
+    //public GameObject EvidenceFolder;
     
     public override void Start()
     {
@@ -21,12 +21,12 @@ public class NPC : Interactable
     public override void OnTriggerEnter2D(Collider2D collision)
     {
         base.OnTriggerEnter2D(collision);
-        EvidenceFolder.SetActive(true);
+        //EvidenceFolder.SetActive(true);
     }
 
     public override void OnTriggerExit2D(Collider2D collision)
     {
         base.OnTriggerExit2D(collision);
-        EvidenceFolder.SetActive(false);
+        //EvidenceFolder.SetActive(false);
     }
 }

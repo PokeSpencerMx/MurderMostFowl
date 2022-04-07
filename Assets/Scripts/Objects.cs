@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Objects : Interactable
 {
-    public GameObject CollectedEvidence;
+    public GameObject[] CollectedEvidence;
     public string Description;
 
     public override void Start()
@@ -17,6 +17,8 @@ public class Objects : Interactable
     public override void OnTriggerEnter2D(Collider2D collision)
     {
         base.OnTriggerEnter2D(collision);
-        CollectedEvidence.SetActive(true);
+        CollectedEvidence[0].SetActive(true);
+        CollectedEvidence[1].SetActive(true);
+        CollectedEvidence[2].SetActive(true);
     }
 }
